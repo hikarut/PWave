@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17622B441E3C474C002AC587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17622B431E3C474C002AC587 /* AppDelegate.swift */; };
+		17622B461E3C474C002AC587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17622B451E3C474C002AC587 /* ViewController.swift */; };
+		17622B491E3C474C002AC587 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17622B471E3C474C002AC587 /* Main.storyboard */; };
+		17622B4B1E3C474C002AC587 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17622B4A1E3C474C002AC587 /* Assets.xcassets */; };
+		17622B4E1E3C474C002AC587 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17622B4C1E3C474C002AC587 /* LaunchScreen.storyboard */; };
+		17622B591E3C474C002AC587 /* PWaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17622B581E3C474C002AC587 /* PWaveTests.swift */; };
+		17622B641E3C474C002AC587 /* PWaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17622B631E3C474C002AC587 /* PWaveUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17622B551E3C474C002AC587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17622B381E3C474C002AC587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17622B3F1E3C474C002AC587;
+			remoteInfo = PWave;
+		};
+		17622B601E3C474C002AC587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17622B381E3C474C002AC587 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17622B3F1E3C474C002AC587;
+			remoteInfo = PWave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17622B401E3C474C002AC587 /* PWave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17622B431E3C474C002AC587 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		17622B451E3C474C002AC587 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		17622B481E3C474C002AC587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		17622B4A1E3C474C002AC587 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17622B4D1E3C474C002AC587 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		17622B4F1E3C474C002AC587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17622B541E3C474C002AC587 /* PWaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17622B581E3C474C002AC587 /* PWaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWaveTests.swift; sourceTree = "<group>"; };
+		17622B5A1E3C474C002AC587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17622B5F1E3C474C002AC587 /* PWaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PWaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17622B631E3C474C002AC587 /* PWaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PWaveUITests.swift; sourceTree = "<group>"; };
+		17622B651E3C474C002AC587 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17622B3D1E3C474C002AC587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17622B511E3C474C002AC587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17622B5C1E3C474C002AC587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17622B371E3C474C002AC587 = {
+			isa = PBXGroup;
+			children = (
+				17622B421E3C474C002AC587 /* PWave */,
+				17622B571E3C474C002AC587 /* PWaveTests */,
+				17622B621E3C474C002AC587 /* PWaveUITests */,
+				17622B411E3C474C002AC587 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17622B411E3C474C002AC587 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17622B401E3C474C002AC587 /* PWave.app */,
+				17622B541E3C474C002AC587 /* PWaveTests.xctest */,
+				17622B5F1E3C474C002AC587 /* PWaveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17622B421E3C474C002AC587 /* PWave */ = {
+			isa = PBXGroup;
+			children = (
+				17622B431E3C474C002AC587 /* AppDelegate.swift */,
+				17622B451E3C474C002AC587 /* ViewController.swift */,
+				17622B471E3C474C002AC587 /* Main.storyboard */,
+				17622B4A1E3C474C002AC587 /* Assets.xcassets */,
+				17622B4C1E3C474C002AC587 /* LaunchScreen.storyboard */,
+				17622B4F1E3C474C002AC587 /* Info.plist */,
+			);
+			path = PWave;
+			sourceTree = "<group>";
+		};
+		17622B571E3C474C002AC587 /* PWaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				17622B581E3C474C002AC587 /* PWaveTests.swift */,
+				17622B5A1E3C474C002AC587 /* Info.plist */,
+			);
+			path = PWaveTests;
+			sourceTree = "<group>";
+		};
+		17622B621E3C474C002AC587 /* PWaveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17622B631E3C474C002AC587 /* PWaveUITests.swift */,
+				17622B651E3C474C002AC587 /* Info.plist */,
+			);
+			path = PWaveUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17622B3F1E3C474C002AC587 /* PWave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17622B681E3C474C002AC587 /* Build configuration list for PBXNativeTarget "PWave" */;
+			buildPhases = (
+				17622B3C1E3C474C002AC587 /* Sources */,
+				17622B3D1E3C474C002AC587 /* Frameworks */,
+				17622B3E1E3C474C002AC587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PWave;
+			productName = PWave;
+			productReference = 17622B401E3C474C002AC587 /* PWave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17622B531E3C474C002AC587 /* PWaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17622B6B1E3C474C002AC587 /* Build configuration list for PBXNativeTarget "PWaveTests" */;
+			buildPhases = (
+				17622B501E3C474C002AC587 /* Sources */,
+				17622B511E3C474C002AC587 /* Frameworks */,
+				17622B521E3C474C002AC587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17622B561E3C474C002AC587 /* PBXTargetDependency */,
+			);
+			name = PWaveTests;
+			productName = PWaveTests;
+			productReference = 17622B541E3C474C002AC587 /* PWaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17622B5E1E3C474C002AC587 /* PWaveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17622B6E1E3C474C002AC587 /* Build configuration list for PBXNativeTarget "PWaveUITests" */;
+			buildPhases = (
+				17622B5B1E3C474C002AC587 /* Sources */,
+				17622B5C1E3C474C002AC587 /* Frameworks */,
+				17622B5D1E3C474C002AC587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17622B611E3C474C002AC587 /* PBXTargetDependency */,
+			);
+			name = PWaveUITests;
+			productName = PWaveUITests;
+			productReference = 17622B5F1E3C474C002AC587 /* PWaveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17622B381E3C474C002AC587 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = hikaru;
+				TargetAttributes = {
+					17622B3F1E3C474C002AC587 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					17622B531E3C474C002AC587 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 17622B3F1E3C474C002AC587;
+					};
+					17622B5E1E3C474C002AC587 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 17622B3F1E3C474C002AC587;
+					};
+				};
+			};
+			buildConfigurationList = 17622B3B1E3C474C002AC587 /* Build configuration list for PBXProject "PWave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17622B371E3C474C002AC587;
+			productRefGroup = 17622B411E3C474C002AC587 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17622B3F1E3C474C002AC587 /* PWave */,
+				17622B531E3C474C002AC587 /* PWaveTests */,
+				17622B5E1E3C474C002AC587 /* PWaveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17622B3E1E3C474C002AC587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17622B4E1E3C474C002AC587 /* LaunchScreen.storyboard in Resources */,
+				17622B4B1E3C474C002AC587 /* Assets.xcassets in Resources */,
+				17622B491E3C474C002AC587 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17622B521E3C474C002AC587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17622B5D1E3C474C002AC587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17622B3C1E3C474C002AC587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17622B461E3C474C002AC587 /* ViewController.swift in Sources */,
+				17622B441E3C474C002AC587 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17622B501E3C474C002AC587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17622B591E3C474C002AC587 /* PWaveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17622B5B1E3C474C002AC587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17622B641E3C474C002AC587 /* PWaveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17622B561E3C474C002AC587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17622B3F1E3C474C002AC587 /* PWave */;
+			targetProxy = 17622B551E3C474C002AC587 /* PBXContainerItemProxy */;
+		};
+		17622B611E3C474C002AC587 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17622B3F1E3C474C002AC587 /* PWave */;
+			targetProxy = 17622B601E3C474C002AC587 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		17622B471E3C474C002AC587 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17622B481E3C474C002AC587 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		17622B4C1E3C474C002AC587 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17622B4D1E3C474C002AC587 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17622B661E3C474C002AC587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17622B671E3C474C002AC587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17622B691E3C474C002AC587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PWave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hikaru.PWave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		17622B6A1E3C474C002AC587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PWave/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hikaru.PWave;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		17622B6C1E3C474C002AC587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hikaru.PWaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PWave.app/PWave";
+			};
+			name = Debug;
+		};
+		17622B6D1E3C474C002AC587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PWaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hikaru.PWaveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PWave.app/PWave";
+			};
+			name = Release;
+		};
+		17622B6F1E3C474C002AC587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PWaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hikaru.PWaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PWave;
+			};
+			name = Debug;
+		};
+		17622B701E3C474C002AC587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PWaveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hikaru.PWaveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PWave;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17622B3B1E3C474C002AC587 /* Build configuration list for PBXProject "PWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17622B661E3C474C002AC587 /* Debug */,
+				17622B671E3C474C002AC587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17622B681E3C474C002AC587 /* Build configuration list for PBXNativeTarget "PWave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17622B691E3C474C002AC587 /* Debug */,
+				17622B6A1E3C474C002AC587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17622B6B1E3C474C002AC587 /* Build configuration list for PBXNativeTarget "PWaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17622B6C1E3C474C002AC587 /* Debug */,
+				17622B6D1E3C474C002AC587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17622B6E1E3C474C002AC587 /* Build configuration list for PBXNativeTarget "PWaveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17622B6F1E3C474C002AC587 /* Debug */,
+				17622B701E3C474C002AC587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17622B381E3C474C002AC587 /* Project object */;
+}
