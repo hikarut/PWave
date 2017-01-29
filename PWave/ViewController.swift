@@ -14,6 +14,18 @@ class ViewController: UIViewController {
     let mwmDevice = MWMDevice()
     var deviceId: String = ""
     var mfgId: String = ""
+    
+    // 脳波ラベル
+    @IBOutlet weak var attentionLabel: UILabel!
+    @IBOutlet weak var meditationLabel: UILabel!
+    @IBOutlet weak var deltaLabel: UILabel!
+    @IBOutlet weak var thetaLabel: UILabel!
+    @IBOutlet weak var highAlphaLabel: UILabel!
+    @IBOutlet weak var lowAlphaLabel: UILabel!
+    @IBOutlet weak var highBetaLabel: UILabel!
+    @IBOutlet weak var lowBetaLabel: UILabel!
+    @IBOutlet weak var midGammaLabel: UILabel!
+    @IBOutlet weak var lowGammaLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +73,16 @@ extension ViewController: MWMDelegate {
     
     func didDisconnect() {
         print("didDisconnect")
+        attentionLabel.text = ""
+        meditationLabel.text = ""
+        deltaLabel.text = ""
+        thetaLabel.text = ""
+        lowAlphaLabel.text = ""
+        highAlphaLabel.text = ""
+        lowBetaLabel.text = ""
+        highBetaLabel.text = ""
+        lowGammaLabel.text = ""
+        midGammaLabel.text = ""
     }
 
     // option
@@ -70,18 +92,24 @@ extension ViewController: MWMDelegate {
     
     func eSense(_ poorSignal: Int32, attention: Int32, meditation: Int32) {
         print("eSense")
+        attentionLabel.text = String(attention)
+        meditationLabel.text = String(meditation)
     }
     
     func eegPowerDelta(_ delta: Int32, theta: Int32, lowAlpha: Int32, highAlpha: Int32) {
         print("eegPowerDelta")
-        print(delta)
-        print(theta)
-        print(lowAlpha)
-        print(highAlpha)
+        deltaLabel.text = String(delta)
+        thetaLabel.text = String(theta)
+        lowAlphaLabel.text = String(lowAlpha)
+        highAlphaLabel.text = String(highAlpha)
     }
     
     func eegPowerLowBeta(_ lowBeta: Int32, highBeta: Int32, lowGamma: Int32, midGamma: Int32) {
         print("eegPowerLowBeta")
+        lowBetaLabel.text = String(lowBeta)
+        highBetaLabel.text = String(highBeta)
+        lowGammaLabel.text = String(lowGamma)
+        midGammaLabel.text = String(midGamma)
     }
     
     func eegBlink(_ blinkValue: Int32) {
