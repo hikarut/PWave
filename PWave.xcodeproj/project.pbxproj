@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1720690E1E3DD2380089FE49 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1720690D1E3DD2380089FE49 /* CoreBluetooth.framework */; };
+		172069111E3DD6EC0089FE49 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172069101E3DD6EC0089FE49 /* ExternalAccessory.framework */; };
 		1739ABCB1E3C4AB100285EC0 /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1739ABC71E3C4AB100285EC0 /* libMWMSDK.a */; };
 		17622B441E3C474C002AC587 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17622B431E3C474C002AC587 /* AppDelegate.swift */; };
 		17622B461E3C474C002AC587 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17622B451E3C474C002AC587 /* ViewController.swift */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1720690C1E3DD07A0089FE49 /* PWave.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PWave.entitlements; sourceTree = "<group>"; };
+		1720690D1E3DD2380089FE49 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		172069101E3DD6EC0089FE49 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		1739ABC71E3C4AB100285EC0 /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
 		1739ABC81E3C4AB100285EC0 /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
 		1739ABC91E3C4AB100285EC0 /* MWMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
@@ -60,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172069111E3DD6EC0089FE49 /* ExternalAccessory.framework in Frameworks */,
+				1720690E1E3DD2380089FE49 /* CoreBluetooth.framework in Frameworks */,
 				1739ABCB1E3C4AB100285EC0 /* libMWMSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172069091E3DD07A0089FE49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				172069101E3DD6EC0089FE49 /* ExternalAccessory.framework */,
+				1720690D1E3DD2380089FE49 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1739ABC61E3C4AB100285EC0 /* lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +115,7 @@
 				17622B571E3C474C002AC587 /* PWaveTests */,
 				17622B621E3C474C002AC587 /* PWaveUITests */,
 				17622B411E3C474C002AC587 /* Products */,
+				172069091E3DD07A0089FE49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +132,7 @@
 		17622B421E3C474C002AC587 /* PWave */ = {
 			isa = PBXGroup;
 			children = (
+				1720690C1E3DD07A0089FE49 /* PWave.entitlements */,
 				1739ABC61E3C4AB100285EC0 /* lib */,
 				17622B431E3C474C002AC587 /* AppDelegate.swift */,
 				17622B451E3C474C002AC587 /* ViewController.swift */,
@@ -215,6 +233,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LMKBRKZW9Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 					17622B531E3C474C002AC587 = {
 						CreatedOnToolsVersion = 8.2.1;
