@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17622B3F1E3C474C002AC587"
-               BuildableName = "PWave.app"
-               BlueprintName = "PWave"
-               ReferencedContainer = "container:PWave.xcodeproj">
+               BlueprintIdentifier = "D9C3E35E19E48FF1009FC285"
+               BuildableName = "Starscream.framework"
+               BlueprintName = "Starscream OSX"
+               ReferencedContainer = "container:Starscream.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D9C3E36819E48FF1009FC285"
+               BuildableName = "Starscream OSXTests.xctest"
+               BlueprintName = "Starscream OSXTests"
+               ReferencedContainer = "container:Starscream.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17622B531E3C474C002AC587"
-               BuildableName = "PWaveTests.xctest"
-               BlueprintName = "PWaveTests"
-               ReferencedContainer = "container:PWave.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "17622B5E1E3C474C002AC587"
-               BuildableName = "PWaveUITests.xctest"
-               BlueprintName = "PWaveUITests"
-               ReferencedContainer = "container:PWave.xcodeproj">
+               BlueprintIdentifier = "D9C3E36819E48FF1009FC285"
+               BuildableName = "Starscream OSXTests.xctest"
+               BlueprintName = "Starscream OSXTests"
+               ReferencedContainer = "container:Starscream.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17622B3F1E3C474C002AC587"
-            BuildableName = "PWave.app"
-            BlueprintName = "PWave"
-            ReferencedContainer = "container:PWave.xcodeproj">
+            BlueprintIdentifier = "D9C3E35E19E48FF1009FC285"
+            BuildableName = "Starscream.framework"
+            BlueprintName = "Starscream OSX"
+            ReferencedContainer = "container:Starscream.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -71,23 +75,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17622B3F1E3C474C002AC587"
-            BuildableName = "PWave.app"
-            BlueprintName = "PWave"
-            ReferencedContainer = "container:PWave.xcodeproj">
+            BlueprintIdentifier = "D9C3E35E19E48FF1009FC285"
+            BuildableName = "Starscream.framework"
+            BlueprintName = "Starscream OSX"
+            ReferencedContainer = "container:Starscream.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = ""
-            value = ""
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -97,16 +93,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "17622B3F1E3C474C002AC587"
-            BuildableName = "PWave.app"
-            BlueprintName = "PWave"
-            ReferencedContainer = "container:PWave.xcodeproj">
+            BlueprintIdentifier = "D9C3E35E19E48FF1009FC285"
+            BuildableName = "Starscream.framework"
+            BlueprintName = "Starscream OSX"
+            ReferencedContainer = "container:Starscream.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

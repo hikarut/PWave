@@ -12,6 +12,8 @@ import CoreBluetooth
 class ViewController: UIViewController {
     
     let mwmDevice = MWMDevice()
+    let websocket = WebSocketModel()
+    var timer: Timer!
     var deviceId: String = ""
     var mfgId: String = ""
     
@@ -31,6 +33,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         mwmDevice.delegate = self
         mwmDevice.enableConsoleLog(true)
+        
+        websocket.connect()
+        
+        // タイマー処理
+        timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                     target: self,
+                                     selector: #selector(self.timerAction),
+                                     userInfo: nil,
+                                     repeats: true)
+    }
+    
+    func timerAction() {
+        //websocket.send(string: "aaaa")
     }
 
     override func didReceiveMemoryWarning() {
