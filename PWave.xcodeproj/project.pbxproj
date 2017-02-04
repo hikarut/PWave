@@ -20,6 +20,7 @@
 		17DC17811E458117007BB697 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DC17801E458117007BB697 /* Starscream.framework */; };
 		17DC17841E458227007BB697 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC17831E458227007BB697 /* Const.swift */; };
 		17DC17861E4582E9007BB697 /* WebSocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DC17851E4582E9007BB697 /* WebSocketModel.swift */; };
+		17DC17881E459A1C007BB697 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17DC17871E459A1C007BB697 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		17DC17801E458117007BB697 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		17DC17831E458227007BB697 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		17DC17851E4582E9007BB697 /* WebSocketModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocketModel.swift; sourceTree = "<group>"; };
+		17DC17871E459A1C007BB697 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DC17881E459A1C007BB697 /* SwiftyJSON.framework in Frameworks */,
 				17DC17811E458117007BB697 /* Starscream.framework in Frameworks */,
 				172069111E3DD6EC0089FE49 /* ExternalAccessory.framework in Frameworks */,
 				1720690E1E3DD2380089FE49 /* CoreBluetooth.framework in Frameworks */,
@@ -98,6 +101,7 @@
 		172069091E3DD07A0089FE49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17DC17871E459A1C007BB697 /* SwiftyJSON.framework */,
 				17DC17801E458117007BB697 /* Starscream.framework */,
 				172069101E3DD6EC0089FE49 /* ExternalAccessory.framework */,
 				1720690D1E3DD2380089FE49 /* CoreBluetooth.framework */,
@@ -320,6 +324,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);

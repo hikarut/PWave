@@ -20,7 +20,9 @@ class WebSocketModel {
     }
     
     func send(string: String) {
+    //func send(data: Data) {
         socket.write(string: string)
+        //socket.write(data: data)
         print("send")
     }
     

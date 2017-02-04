@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreBluetooth
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,8 @@ class ViewController: UIViewController {
     var timer: Timer!
     var deviceId: String = ""
     var mfgId: String = ""
+    var connectFlag = false
+    var sendData = Const.sendDataInit
     
     // 脳波ラベル
     @IBOutlet weak var attentionLabel: UILabel!
@@ -28,16 +31,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var lowBetaLabel: UILabel!
     @IBOutlet weak var midGammaLabel: UILabel!
     @IBOutlet weak var lowGammaLabel: UILabel!
+    @IBOutlet weak var deviceLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         mwmDevice.delegate = self
         mwmDevice.enableConsoleLog(true)
         
+    }
+    
+    func send() {
+        // ソケット
         websocket.connect()
         
         // タイマー処理
-        timer = Timer.scheduledTimer(timeInterval: 1.0,
+        timer = Timer.scheduledTimer(timeInterval: Const.sendInterval,
                                      target: self,
                                      selector: #selector(self.timerAction),
                                      userInfo: nil,
@@ -45,7 +53,7 @@ class ViewController: UIViewController {
     }
     
     func timerAction() {
-        //websocket.send(string: "aaaa")
+        websocket.send(string: String(describing: JSON(sendData)))
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,11 +69,20 @@ class ViewController: UIViewController {
         // デバイスが見つかったらコネクト
         if deviceId != "" {
             mwmDevice.connect(deviceId)
+            connectFlag = true
+            send()
         }
     }
     
     @IBAction func disconnect(_ sender: UIButton) {
-        mwmDevice.disconnectDevice()
+        // 接続状態だったら切る
+        if connectFlag {
+            mwmDevice.disconnectDevice()
+            // データの初期化
+            sendData = Const.sendDataInit
+            timer.invalidate()
+            deviceLabel.text = ""
+        }
     }
 }
 
@@ -77,6 +94,9 @@ extension ViewController: MWMDelegate {
         print(devName)
         print(mfgID)
         print(deviceID)
+        
+        // デバイス名を表示
+        deviceLabel.text = devName
         
         deviceId = deviceID
         mfgId = mfgID
@@ -102,13 +122,17 @@ extension ViewController: MWMDelegate {
 
     // option
     func eegSample(_ sample: Int32) {
-//        print("eegSample")
     }
     
+    // 集中と瞑想
     func eSense(_ poorSignal: Int32, attention: Int32, meditation: Int32) {
         print("eSense")
         attentionLabel.text = String(attention)
         meditationLabel.text = String(meditation)
+        
+        // 送信データのセット
+        sendData["a"] = attention
+        sendData["m"] = meditation
     }
     
     func eegPowerDelta(_ delta: Int32, theta: Int32, lowAlpha: Int32, highAlpha: Int32) {
@@ -117,6 +141,7 @@ extension ViewController: MWMDelegate {
         thetaLabel.text = String(theta)
         lowAlphaLabel.text = String(lowAlpha)
         highAlphaLabel.text = String(highAlpha)
+        //1sendData["delta"] = delta
     }
     
     func eegPowerLowBeta(_ lowBeta: Int32, highBeta: Int32, lowGamma: Int32, midGamma: Int32) {
