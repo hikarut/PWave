@@ -69,8 +69,10 @@ class ViewController: UIViewController {
         // デバイスが見つかったらコネクト
         if deviceId != "" {
             mwmDevice.connect(deviceId)
+            if !connectFlag {
+                send()
+            }
             connectFlag = true
-            send()
         }
     }
     
@@ -82,6 +84,7 @@ class ViewController: UIViewController {
             sendData = Const.sendDataInit
             timer.invalidate()
             deviceLabel.text = ""
+            connectFlag = false
         }
     }
 }
